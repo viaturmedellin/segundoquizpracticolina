@@ -1,0 +1,975 @@
+/* Estilos Globales */
+*{ margin: 0px;	padding: 0px;}
+body{ margin: 0px auto; width: 80%; height: 1280px; }
+html { background: url(../images/medellin_foto.png); }
+@font-face {
+  font-family: 'Roboto-Light';
+  src:  url('fonts/Roboto-Light.ttf'); 
+
+   }
+
+ .textos{width: 45%;
+font-family: 'Roboto-Light',sans-serif;
+display: inline-block;
+height: 200px;
+float: right;
+overflow: scroll;
+margin-right: 10px;
+
+}
+
+#buscador_redes{
+	width: 100%;
+	height: 40px;
+}
+
+
+/*Estilos para Escritorio*/
+
+
+@media only screen and (min-width:769px){ 
+body{ width: 80%;
+	max-width: 1024px;
+	background: #fff; }
+
+header { width: 100%;
+	display: inline-block;
+height: 120px;
+background: #fff; }
+
+#logo { width: 10%;
+	display: inline-block;
+padding-left: 80px;
+padding-top: 5px;
+ }
+
+#viatur {width: 20%;
+display: inline-block;
+padding-left: 250px;}
+
+
+header nav {
+	width:100%;
+	display: inline-block;
+	padding-top: 5px;
+	display: inline-block;
+}
+ 
+.menu_bar {
+	display:none;
+}
+ 
+nav {
+display: inline-block;
+
+}
+
+header nav ul {
+	overflow:hidden;
+	list-style:none;
+}
+ 
+header nav ul li {
+	float:left;
+}
+ 
+header nav ul li a {
+	color:#ff0;
+	padding:15px;
+	display:block;
+	text-decoration:none;
+}
+ 
+ 
+header nav ul li a:hover {
+	background:#037E8C;
+}
+
+header nav ul li span { margin-right: 10px;
+}
+ 
+
+ 
+
+.boton{  background: #938f8f;
+	width: 137px;
+	display: inline-block;
+	height: 5px;
+	text-decoration: none;
+	font-family: arial;
+	font-size: 14px;
+	color: #000;
+	text-align: center;
+
+}
+
+.boton:hover{
+	background: rgba(122,26,26,0.8);	
+}
+
+/*Buscador*/
+
+#searchform {
+    width: 280px;
+	height:30px;
+    padding: 4px;
+    background: #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 2px 0 rgba(255,255,255,.5);
+    float: left;
+    padding-left: 25px;
+
+
+}
+
+#searchform input {
+    width: 190px;
+	height:20px;
+    padding: 5px;
+    float: left;
+    border: 0;
+    background: #eee;
+    border-radius: 3px 0 0 3px;
+	box-shadow: 0 1px 1px rgba(0,0,0,.4) inset;
+}
+
+#searchform input:focus {
+    outline: 0;
+	height:21px;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+}
+
+#searchform input:-webkit-input-placeholder {
+   color: #999;
+   font-weight: normal;
+   font-style: italic;
+}
+
+#searchform input:-moz-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}
+
+#searchform input:-ms-input-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}    
+
+#searchform button {
+    float: right;
+    border: 0;
+    cursor: pointer;
+    height: 30px;
+    width: 80px;
+    font-size:15px;
+    color: #000;
+    background: #938f8f;
+
+}   
+
+#searchform button:hover{
+   background: rgba(122,26,26,0.8);
+}	
+
+#searchform button:active,
+#searchform button:focus{
+    background: #2672e0;
+}
+
+#searchform button:before { /* flecha */
+    content: '';
+    position: absolute;
+    border-width: 8px 8px 8px 0;
+    border-style: solid solid solid none;
+    border-color: transparent #438cdb transparent;
+    top: 8px;
+    left: -5px;
+}
+
+#searchform button:hover:before{
+    border-right-color: #2672e0;
+}
+
+#searchform button:focus:before{
+    border-right-color: #2672e0;
+}    
+
+/*Aside Redes Sociales*/
+.redes { 
+	width: 30px;
+	height: 30px;
+float: right;
+padding-right: 15px;
+padding-top: 10px;
+text-decoration:none;
+ }
+
+ .rutas { width: 30px;
+	height: 30px;
+float: right;
+border: none;
+text-decoration:none;
+ }
+
+ /*Imagen principal Background Museo*/
+
+#museo{
+	width: 72%;
+	height: 314px;
+	background: url(../images/museo.png);
+	float: left;
+}
+
+#linkmuseo { 
+font-family:'Open', sans-serif;
+float: left;
+padding-top: 260px;
+background: none;
+border: none;
+color: #fff;
+font-size: 2.1em;
+width: 300px;
+padding-left: 50px;
+text-decoration: none;}
+
+#linkmuseo:hover{color: #960606; }
+
+/*Banner Animado*/
+
+#banner{width: 100%;
+height: 314px;
+background: #fff;
+}
+
+#publicidadaside{width: 100%;
+height: 314px;}
+
+#canvas{width: 50%;
+height: 314px;
+margin-left: 3%;
+}
+
+.imagenes{width: 45%;
+height: 200px;
+
+}
+
+#imagenes{display: none;}
+#image{display: none;}
+
+
+.cajas{width: 45%;
+height: 200px;
+display: inline-block;
+background: #fff;
+margin-top:  30px;
+margin-left: 10px;
+float: left;
+}
+
+.cajitas{width: 25%;
+height: 200px;
+background: #fff;
+margin-top:  30px;
+margin-left: 10px;
+float: left;}
+
+
+
+.textos1 {font-family:'Open', sans-serif;
+	color: #000;
+	font-size: 1.5em;
+	float: right;
+	padding-right:30px;
+	padding-top: 10px;
+	background: none;
+    border: none;
+    padding-top: 5px;
+    text-decoration: none;
+}
+.textos1:hover{color: #960606; }
+
+.imagen{width: 100%;
+height: 150px;}
+
+#ima{display: none;}
+
+.texticos{width: 45%;
+display: inline-block;
+height: 200px;
+float: left;
+overflow: hidden;
+margin-right: 10px;
+padding-left: 80px;}
+
+.textos2{font-family:'Open', sans-serif;
+	color: #000;
+	font-size: 1.5em;
+	background: none;
+    border: none;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+#texto3{display: none;}
+
+footer{
+	width: 100%;
+	height:250px;
+	background:#065728;
+	float: left;
+	margin-top: 65px;
+
+	}
+	nav {
+display: inline-block;
+
+}
+
+footer nav ul {
+	overflow:hidden;
+	list-style:none;
+}
+ 
+footer nav ul li {
+	float:left;
+}
+ 
+footer nav ul li a {
+
+	padding:15px;
+	display:block;
+	text-decoration:none;
+}
+ 
+ 
+footer nav ul li a:hover {
+	background:#037E8C;
+}
+
+footer nav ul li span { margin-right: 10px;
+}
+
+.botones{  background: none;
+	width:  134px;
+	height: 10px;
+	display: inline-block;
+	float: left;
+	text-decoration: none;
+	font-family: arial;
+	font-size: 14px;
+	color: #000;
+	text-align: center;
+
+
+}
+
+.botones:hover{
+	background: rgba(122,26,26,0.8);	
+}
+
+
+h1 {
+	padding-top: 40px;
+    padding-left: 700px;
+	font-size: 1.5em;
+overflow: hidden;
+	color: #000;
+}
+h2 {
+	font-size: 16px;
+	color: #000;
+	padding-top: 50px;
+padding-left: 430px;
+	overflow: hidden;
+}
+
+
+#pagina{width: 50%;
+	height: 50px;
+background: none;
+padding-left: 400px;
+text-decoration:none;
+color: #000;
+font-size: 1.3em;
+
+}
+
+#pagina:hover{color:rgba(122,26,26,0.8);}
+
+}
+/*Estilos para tableta*/
+
+
+
+@media only screen and (min-width:481px) and (max-width:768px) {
+
+body{  width: 100%;
+	height: 1400px;
+	display: inline-block;
+	background: #fff; }
+
+header { width: 100%;
+height: 80px;
+background: #fff;}
+
+#logo { width: 10%;
+	display: inline-block;
+padding-left: 75px;
+padding-top: 5px;
+ }
+
+#viatur {width: 25%;
+display: inline-block;
+padding-left: 130px;}
+
+.menu_bar {
+		display:block;
+		width:100%;
+		position: fixed;
+		top:0;
+		padding-left: 20px;
+		padding-top: 20px;
+
+	}
+ 
+	.menu_bar .bt-menu {
+		display: block;
+        float: left;
+		color: #000;
+		overflow: hidden;
+		font-size: 25px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+ 
+	.menu_bar span {
+		float: right;
+		font-size: 35px;
+	}
+ 
+	header nav {
+		width: 90%;
+		background: #065728;
+	    height: calc(100%);
+		padding-left: 15px;
+		position: fixed;
+		right:100%;
+		margin: 0;
+		overflow: scroll;
+	}
+ 
+	header nav ul li {
+		display: block;
+		padding-top: 30px;
+		border-bottom:1px solid rgba(255,255,255,.5);
+
+	}
+ 
+	header nav ul li a {
+		color: #000;
+		display: block;
+	}
+
+	header nav ul li span { margin-right: 10px;
+}
+ 
+header nav ul li a:hover {background: rgba(122,26,26,0.8);	
+}
+
+#searchform {
+    width: 230px;
+	height:30px;
+    padding: 4px;
+    background: #ccc;
+    display: inline-block;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 2px 0 rgba(255,255,255,.5);
+    float: left;
+    padding-left: 25px;
+
+
+}
+
+#searchform input {
+    width: 110px;
+	height:20px;
+	 display: inline-block;
+    padding: 5px;
+    float: left;
+    border: 0;
+    background: #eee;
+    border-radius: 3px 0 0 3px;
+	box-shadow: 0 1px 1px rgba(0,0,0,.4) inset;
+}
+
+#searchform input:focus {
+    outline: 0;
+	height:21px;
+	 display: inline-block;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+}
+
+#searchform input:-webkit-input-placeholder {
+   color: #999;
+    display: inline-block;
+   font-weight: normal;
+   font-style: italic;
+}
+
+#searchform input:-moz-placeholder {
+    color: #999;
+     display: inline-block;
+    font-weight: normal;
+    font-style: italic;
+}
+
+#searchform input:-ms-input-placeholder {
+    color: #999;
+     display: inline-block;
+    font-weight: normal;
+    font-style: italic;
+}    
+
+#searchform button {
+    float: right;
+    border: 0;
+     display: inline-block;
+    cursor: pointer;
+    height: 30px;
+    width: 80px;
+    font-size:15px;
+    color: #000;
+    background: #938f8f;
+
+}   
+
+#searchform button:hover{
+   background: rgba(122,26,26,0.8);
+}	
+
+#searchform button:active,
+#searchform button:focus{
+    background: #2672e0;
+}
+
+#searchform button:before { /* flecha */
+    content: '';
+    position: absolute;
+     display: inline-block;
+    border-width: 8px 8px 8px 0;
+    border-style: solid solid solid none;
+    border-color: transparent #438cdb transparent;
+    top: 8px;
+    left: -5px;
+}
+
+#searchform button:hover:before{
+    border-right-color: #2672e0;
+}
+
+#searchform button:focus:before{
+    border-right-color: #2672e0;
+}    
+
+.redes { 	width: 30px;
+	height: 30px;
+float: right;
+padding-right: 15px;
+padding-top: 10px;
+text-decoration:none;
+ }
+
+
+ .rutas { width: 30px;
+	height: 30px;
+float: right;
+border: none;
+text-decoration:none;
+ }
+
+#museo{
+	width: 100%;
+	height: 322px;
+	display: inline-block;
+	background: url(../images/museo1.png);
+	background-repeat: no-repeat;
+	float: left;
+
+}
+
+#linkmuseo { 
+font-family:'Open', sans-serif;
+float: left;
+padding-top: 250px;
+background: none;
+border: none;
+color: #fff;
+font-size: 2.1em;
+width: 300px;
+padding-left: 30px;
+text-decoration: none;}
+
+#linkmuseo:hover{color: #960606; }
+
+
+
+.imagenes{width: 45%;
+height: 200px;
+}
+#ima{width: 45%;
+height: 200px;}
+.imagen{display: none;}
+
+#image{width: 45%;
+height: 200px;}
+
+.cajas{width: 60%;
+height: 200px;
+display: inline-block;
+background: #fff;
+margin-top:  30px;
+margin-left: 10px;
+
+}
+.cajitas{width: 60%;
+height: 200px;
+display: inline-block;
+background: #fff;
+margin-top:  30px;
+margin-left: 10px;
+}
+
+.textos1 {font-family:'Open', sans-serif;
+	color: #000;
+	font-size: 1.5em;
+	float: right;
+	padding-right:30px;
+	padding-top: 10px;
+	background: none;
+    border: none;
+    padding-top: 5px;
+    text-decoration: none;
+}
+.textos1:hover{color: #960606; }
+
+.textos2{font-family:'Open', sans-serif;
+	color: #000;
+	font-size: 1.5em;
+	background: none;
+    border: none;
+    text-decoration: none;
+}
+
+.textos2:hover{color: #960606; }
+
+.texto3{width: 45%;
+display: inline-block;
+float: right;
+overflow: hidden;}
+
+
+.texticos{width: 45%;
+font-family: 'Roboto-Light',sans-serif;
+display: inline-block;
+height: 200px;
+float: right;
+overflow: scroll;
+margin-right: 10px;
+}
+
+
+
+#banner{width: 35%;
+height: 400px;
+background: #fff;
+float: right;
+margin-top: 30px;}
+
+footer{display: none;}
+}
+
+
+/*Estilos para movil*/
+
+
+@media only screen and (max-width:480px) {
+body{ width: 100%;
+	height: 1550px;
+	display: inline-block;
+		background: #fff; }	
+
+header { width: 100%;
+height: 60px;
+}
+
+
+#logo { width: 10%;
+	display: inline-block;
+padding-left: 70px;
+padding-top: 5px;
+ }
+
+#viatur {width: 25%;
+display: inline-block;
+padding-left: 60px;}
+
+.menu_bar {
+		display:block;
+		width:100%;
+		position: fixed;
+		top:0;
+		padding-left: 20px;
+		padding-top: 15px;
+
+	}
+ 
+	.menu_bar .bt-menu {
+		display: block;
+        float: left;
+		color: #000;
+		overflow: hidden;
+		font-size: 25px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+ 
+	.menu_bar span {
+		float: right;
+		font-size: 30px;
+		padding-bottom: 10px;
+	}
+ 
+	header nav {
+		width: 90%;
+		background: #065728;
+	    height: calc(100%);
+		padding-left: 15px;
+		position: fixed;
+		right:100%;
+		margin: 0;
+		overflow: scroll;
+	}
+ 
+	header nav ul li {
+		display: block;
+		padding-top: 30px;
+		border-bottom:1px solid rgba(255,255,255,.5);
+
+	}
+ 
+	header nav ul li a {
+		color: #000;
+		display: block;
+	}
+
+header nav ul li span { margin-right: 10px;
+}
+ 
+header nav ul li a:hover {background: rgba(122,26,26,0.8);	
+}
+#searchform {
+    width: 200px;
+	height:30px;
+    padding: 4px;
+    background: #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 2px 0 rgba(255,255,255,.5);
+    float: left;
+    padding-left: 25px;
+
+
+}
+
+#searchform input {
+    width: 100px;
+	height:20px;
+    padding: 5px;
+    float: left;
+    border: 0;
+    background: #eee;
+    border-radius: 3px 0 0 3px;
+	box-shadow: 0 1px 1px rgba(0,0,0,.4) inset;
+}
+
+#searchform input:focus {
+    outline: 0;
+	height:21px;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+}
+
+#searchform input:-webkit-input-placeholder {
+   color: #999;
+   font-weight: normal;
+   font-style: italic;
+}
+
+#searchform input:-moz-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}
+
+#searchform input:-ms-input-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}    
+
+#searchform button {
+    float: right;
+    border: 0;
+    cursor: pointer;
+    height: 30px;
+    width: 80px;
+    font-size:15px;
+    color: #000;
+    background: #938f8f;
+
+}   
+
+#searchform button:hover{
+   background: rgba(122,26,26,0.8);
+}	
+
+#searchform button:active,
+#searchform button:focus{
+    background: #2672e0;
+}
+
+#searchform button:before { /* flecha */
+    content: '';
+    position: absolute;
+    border-width: 8px 8px 8px 0;
+    border-style: solid solid solid none;
+    border-color: transparent #438cdb transparent;
+    top: 8px;
+    left: -5px;
+}
+
+#searchform button:hover:before{
+    border-right-color: #2672e0;
+}
+
+#searchform button:focus:before{
+    border-right-color: #2672e0;
+}    
+.redes { 	width: 30px;
+	height: 30px;
+float: right;
+padding-top: 10px;
+text-decoration:none;
+ }
+
+
+ .rutas { width: 30px;
+	height: 30px;
+float: right;
+border: none;
+text-decoration:none;
+ }
+
+#museo{
+	width: 100%;
+	height: 201px;
+	display: inline-block;
+	background: url(../images/museo2.png);
+	float: left
+}
+
+#linkmuseo { 
+font-family:'Open', sans-serif;
+float: left;
+padding-top: 150px;
+background: none;
+border: none;
+color: #fff;
+font-size: 2.1em;
+width: 300px;
+padding-left: 50px;
+text-decoration: none;}
+
+#linkmuseo:hover{color: #960606; }
+.imagenes{width: 45%;
+height: 200px;
+}
+#ima{width: 45%;
+height: 200px;}
+.imagen{display: none;}
+
+#image{width: 45%;
+height: 200px;}
+
+.cajas{width: 100%;
+height: 200px;
+display: inline-block;
+background: #fff;
+margin-top:  30px;
+margin-left: 10px;
+
+}
+.cajitas{width: 100%;
+height: 200px;
+display: inline-block;
+background: #fff;
+margin-top:  30px;
+margin-left: 10px;
+}
+
+.textos1 {font-family:'Open', sans-serif;
+	color: #000;
+	font-size: 1.5em;
+	float: right;
+	padding-right:30px;
+	padding-top: 10px;
+	background: none;
+    border: none;
+    padding-top: 5px;
+    text-decoration: none;
+}
+.textos1:hover{color: #960606; }
+
+.textos2{font-family:'Open', sans-serif;
+	color: #000;
+	font-size: 1.5em;
+	background: none;
+    border: none;
+    text-decoration: none;
+}
+
+.textos2:hover{color: #960606; }
+
+.texto3{width: 45%;
+display: inline-block;
+float: right;
+overflow: hidden;}
+
+
+.texticos{width: 45%;
+font-family: 'Roboto-Light',sans-serif;
+display: inline-block;
+height: 200px;
+float: right;
+overflow: scroll;
+margin-right: 10px;
+}
+
+#banner{width: 100%;
+background: #fff;
+text-align: center;
+}
+
+
+footer{display: none;}
+
+
+
+}
+
+
+
